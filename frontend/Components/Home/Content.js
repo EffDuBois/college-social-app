@@ -24,7 +24,7 @@ const Content = () => {
 }
 const styles = StyleSheet.create({
   Container:{
-    height:'80%',
+    marginTop:110,
     alignItems:'stretch',
     justifyContent:'center',
   },
