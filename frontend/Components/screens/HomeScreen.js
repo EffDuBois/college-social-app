@@ -7,8 +7,7 @@ import Content from '../Home/Content';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView  >
-                
+    <SafeAreaView  >                
         <Content/>
     </SafeAreaView>
   )
