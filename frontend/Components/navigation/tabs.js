@@ -6,10 +6,9 @@ import HomeScreen from "../screens/HomeScreen";
 import NotificationScreen from "../screens/NotificationScreen";
 import ChatScreen from "../screens/ChatScreen";
 
-import Home_SVG from "../assets/svg/Home.svg";
-import Message_SVG from "../assets/svg/Messages.svg";
-import Notifications_SVG from "../assets/svg/Notification-bell.svg";
-import GlobalStyles from "../styles/GlobalStyles";
+import Home_SVG from "../../assets/svg/Home.svg";
+import Message_SVG from "../../assets/svg/Messages.svg";
+import Notifications_SVG from "../../assets/svg/Notification-bell.svg";
 
 const Tab = createBottomTabNavigator();
 
@@ -39,7 +38,7 @@ const Tabs = () => {
               onPress={() => navigation.navigate("Profile")}
             >
               <Image
-                source={require("../assets/images/profilePic.png")}
+                source={require("../../assets/images/profilePic.png")}
                 style={{ width: 50, height: 50, borderRadius: 25 }}
               />
             </TouchableOpacity>
