@@ -9,7 +9,7 @@ import ChatScreen from "../screens/ChatScreen";
 import Home_SVG from "../assets/svg/Home.svg";
 import Message_SVG from "../assets/svg/Messages.svg";
 import Notifications_SVG from "../assets/svg/Notification-bell.svg";
-import GlobalStyles from "../Components/styles/GlobalStyles";
+import GlobalStyles from "../styles/GlobalStyles";
 
 const Tab = createBottomTabNavigator();
 
