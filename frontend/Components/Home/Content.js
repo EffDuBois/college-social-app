@@ -17,7 +17,7 @@ const Content = () => {
       </View>
 
     </View>
-    <View style={GlobalStyles.Seperator}></View>
+    
     </>
     
   )
