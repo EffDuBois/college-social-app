@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const ChatScreen = () => {
+const GetHelpScreen = () => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text>ChatScreen</Text>
+      <Text>GetHelpScreen</Text>
     </View>
   );
 };
 
-export default ChatScreen;
+export default GetHelpScreen;

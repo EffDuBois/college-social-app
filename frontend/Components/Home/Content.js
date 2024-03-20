@@ -1,37 +1,33 @@
-import { View,StyleSheet, Text, ScrollView } from 'react-native'
-import React from 'react'
-import GlobalStyles from '../styles/GlobalStyles'
-import BigBtn from '../Buttons/BigBtn'
-
+import { View, StyleSheet, Text, ScrollView, Button } from "react-native";
+import React from "react";
+import GlobalStyles from "../styles/GlobalStyles";
+import { useNavigation } from "@react-navigation/native";
+import BigBtn from "../BigBtn";
 
 const Content = () => {
+  const navigation = useNavigation();
+
   return (
     <>
-    <View style={styles.Container}>
-
-      <BigBtn title="Get Help" onPress={() => console.log("Get Help")} />
-      <BigBtn title="Help Others" onPress={() => console.log("Get Help")} />
-      
-      {/* <View style={GlobalStyles.button}>
-        <Text style={GlobalStyles.Text}>get help</Text> 
+      <View style={styles.Container}>
+        <BigBtn
+          title={"Post Request"}
+          onPress={() => navigation.navigate("GetHelpScreen")}
+        />
+        <BigBtn
+          title={"Requests"}
+          onPress={() => navigation.navigate("HelpOthers")}
+        />
       </View>
-
-      <View style={GlobalStyles.button}>
-        <Text style={GlobalStyles.Text}>help others</Text> 
-      </View> */}
-
-    </View>
-    
     </>
-    
-  )
-}
+  );
+};
 const styles = StyleSheet.create({
-  Container:{
-    marginTop:110,
-    alignItems:'stretch',
-    justifyContent:'center',
+  Container: {
+    height: "80%",
+    alignItems: "stretch",
+    justifyContent: "center",
   },
-})
+});
 
-export default Content
+export default Content;
